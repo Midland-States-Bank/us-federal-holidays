@@ -4,10 +4,10 @@ const utcPlugin = require("dayjs/plugin/utc");
 dayjs.extend(utcPlugin);
 
 const getDateFor = ({ day = 1, month, year }) =>{
-  year = year.toString()
-  day = day.toString().padStart(2,'0')
-  month = month.toString().padStart(2,'0')
-  return dayjs(`${year}-${month}-${day}`, "YYYY-MM-DD");
+  let year_str = year.toString()
+  let day_str = day.toString().padStart(2,'0')
+  let month_str = month.toString().padStart(2,'0')
+  return dayjs(`${year_str}-${month_str}-${day_str}`, "YYYY-MM-DD");
 }
 
 const getNthDayOf = (n, day, month, year) => {
@@ -30,13 +30,13 @@ const getNthDayOf = (n, day, month, year) => {
 };
 
 const getLastDayOf = (day, month, year) => {
-  year = year.toString()
-  day = day.toString().padStart(2,'0')
-  month = month.toString().padStart(2,'0')
+  let year_str = year.toString()
+  let day_str = day.toString().padStart(2,'0')
+  let month_str = month.toString().padStart(2,'0')
   const daysInMonth = dayjs(getDateFor({ month, year })).daysInMonth();
-  const lastDayOfMonth = dayjs(`${year}-${month}-${daysInMonth}`, "YYYY-MM-DD");
+  const lastDayOfMonth = dayjs(`${year_str}-${month_str}-${daysInMonth}`, "YYYY-MM-DD");
 
-  let result = lastDayOfMonth.day(day);
+  let result = lastDayOfMonth.day(day_str);
 
   // See above comment for more details. TL;DR is dayjs.day(x) is not
   // constrained to the same month as the operand object.
