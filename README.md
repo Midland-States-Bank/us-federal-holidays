@@ -1,5 +1,7 @@
 # US Federal Holidays
 
+**Note:  This is a MIDAS-specific fork of this project. It handles a peer dependency conflict involving dayjs.**
+
 Builds and returns a list of all US federal holidays for a given year, and
 provides a helper method to determine if a given date is a US federal holiday.
 Handles shifting holidays to the nearest weekday if the holiday falls on a
