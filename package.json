@@ -1,6 +1,6 @@
 {
-  "name": "@18f/us-federal-holidays",
-  "version": "2.1.1",
+  "name": "midlandsbank/us-federal-holidays",
+  "version": "2.1.2",
   "description": "All about US federal holidays",
   "main": "index.js",
   "keywords": [
@@ -17,11 +17,12 @@
     "Alexandr Rodik (https://github.com/arodik)",
     "Ian Speers (https://github.com/ian-speers)",
     "Tse Kit Yam (https://github.com/tsekityam)",
-    "Ben Berry (https://github.com/bengerman13)"
+    "Ben Berry (https://github.com/bengerman13)",
+    "Chris Willard"
   ],
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/18F/us-federal-holidays.git"
+    "url": "git+ssh://git@github.com/midaschris/us-federal-holidays.git"
   },
   "engines": {
     "node": ">=10.0.0"
