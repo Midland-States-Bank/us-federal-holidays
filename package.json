@@ -1,5 +1,5 @@
 {
-  "name": "midlandsbank/us-federal-holidays",
+  "name": "@midlandsbank/us-federal-holidays",
   "version": "2.1.2",
   "description": "All about US federal holidays",
   "main": "index.js",
