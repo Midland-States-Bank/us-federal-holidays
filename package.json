@@ -41,7 +41,7 @@
     "tap": "^15.0.9"
   },
   "dependencies": {
-    "dayjs": "^1.10.6"
+    "dayjs": "^1.8.34"
   },
   "prettier": {
     "trailingComma": "none",
